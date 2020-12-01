@@ -26,7 +26,7 @@ if (canvas != null) {
     //x and y is the position for the chess. isBlack check whether is black or white
     var drawChess = function (x, y, isBlack) {
         context.beginPath();
-        // ---from Canvas API----
+        // ---from Canvas API----https://developer.mozilla.org/en-US/docs/Web/API/CanvasGradient/addColorStop
         //void ctx.arc(x, y, radius, startAngle, endAngle);
         /*
         Parameters
@@ -47,7 +47,7 @@ if (canvas != null) {
         //The createRadialGradient() method is specified by six parameters, three defining the gradient's start circle, and three defining the end circle.
         var gradient = context.createRadialGradient(radius + x * boxPx, radius + y * boxPx, radius, radius + x * boxPx, radius + y * boxPx, 2);
         if (isBlack) {
-            // ---from Canvas API----
+            // ---from Canvas API----https://developer.mozilla.org/en-US/docs/Web/API/CanvasGradient/addColorStop
             /*void gradient.addColorStop(offset, color);
             offset
                 A number between 0 and 1, inclusive, 
