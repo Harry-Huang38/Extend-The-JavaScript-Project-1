@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Play Gomoku</title>
+    <link rel="icon" href="image/GameIcon.png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<HTML>
+<!-- <body background="image/Background1.jpg"> -->
+<body>
+    <h1 id="h1" align="center">Five In a Row</h1>
+    <h2 class="h2" align="center">Chose The Stone Color(Default Black)</h2>
+    <canvas id="myCanvas"
+        width="750px"
+        height="750px"
+        onclick="play(event)"
+    ></canvas>
+
+    <center>
+        <div class="other">
+            <select id="colorSelect">
+                <h3>Color:  </h3>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                </select>
+                <input id="btn1" type = "button"  value = "select"  onclick = "myColor()"  />
+                <input id="btn2" type=button value='Restart the Game' onclick="location.reload()">
+            </div>
+    </center>
+
+<hr>
+<center>
+    <!-- onmouseover and onmouseout when the mouse moves to the table change the background color. So we can hide the step-->
+    <div style=" width: 252px; background-color:#ffffff" 
+    onmouseover="javascript:this.style.backgroundColor= '#0099ff';" 
+    onmouseout="javascript:this.style.backgroundColor='#ffffff'">
+    <table id="stepBoard" border= '1'; cellspacing="1" cellpadding="0">
+        <tr>
+            <th> </th>
+            <th> Black </th>
+            <th> White </th>
+            </tr>
+        <tr>
+            <th>Step</th>
+            <td><span id="black_step"></td>
+            <td><span id="white_step"></td>
+        </tr>
+    </table>
+    </div>
+
+</center>
+<script type="text/javascript"></script>
+<script src="constant.js"></script>
+<script src="board.js"></script>
+</body>
+</HTML>

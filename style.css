@@ -1,0 +1,78 @@
+#myCanvas{
+    display: block;
+    margin: 50px auto;
+    box-shadow: 10px 10px 10px #474747;
+    z-index: 3;
+}
+
+body{
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.other{
+    font-family: "Time New roman";
+}
+
+#btn1{
+    background: #1e8ef6;
+    color: #fafafa;
+    font-size: 18px;
+    padding: 15px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+#btn2{
+    background: #1e8ef6;
+    color: #fafafa;
+    font-size: 18px;
+    padding: 15px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+#colorSelect{
+    width: 80px;
+    height: 50px;
+    font-size: 22px;
+}
+
+#h1{
+    top: 50px;
+    font-family: Arial;
+    color: #d42626;
+    font-size: 35px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.h2{
+    top: 50px;
+    font-family: Arial;
+    color: #d42626;
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+#stepBoard{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Time New roman";
+    border: 2px solid #54e26c;
+    font-size: 28px;
+}
+
+#stepBoard th{
+    background-color: #0099ff;
+    text-align: center;
+}
+
+#stepBoard td{
+    color: white;
+    text-align: center;
+}
