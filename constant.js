@@ -60,9 +60,6 @@ function myColor() {
             select_count++;
             h2.innerHTML = "You Have White Stone";
         }
-        else{
-            alert("Already Select Color")
-        }
     }
     else{
         alert("The Game Already Started!")
